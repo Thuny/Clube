@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="nome" placeholder="Nome" id="nome">
+        <br>
+        <input type="password" name="senha" placeholder="senha" id="senha">
+        <br>
+        <button type="button" onclick="login()">Enviar</button>
+    </form>
+    <div id="mensagem"></div>
+    <script>
+        function login() {    
+            var nome = document.getElementById("nome").value
+            var senha = document.getElementById("senha").value
+            var div = document.getElementById('mensagem')
+            if (nome == 'Arthur' && senha == 1234) div.innerHTML = 'Logado'
+            else div.innerHTML = 'Inválido'
+        }
+    </script>
+</body>
+</html>
