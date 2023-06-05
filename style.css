@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+.header{
+    display: flex;
+    background-color: blue;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    min-height: 100%;
+    color: white;
+    margin-bottom: 12px;
+}
+.title{
+    margin-left: 8px;
+    margin-top: 24px;
+    font-size: xx-large;
+    width: max-content;
+    height: 90px;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    gap: 12px;
+    padding: 8px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.btn {
+    padding: 10px;
+    padding-inline: 20px;
+    height: max-content;
+    width: max-content;
+    font-size: 20px;
+    border: none;
+    color: white;
+}
+.delete{
+    background-color: red;
+}
+.add{
+    background-color: green;
+}
+.footer{
+    display: flex;
+    padding: 15px;
+    margin: 8px;
+    justify-content: space-between;
+    color: #555;
+}
+.checkbox{
+    height: 20px;
+    min-height: 100%;
+    width: 20px;
+}
+.body{
+    width: 100%;
+    height: max-content;
+    min-height: 40vh;
+}
+.body div{
+    justify-content: space-around;
+}
+thead{
+    border-top: solid 3px #555;
+    padding-top: 8px;
+}
+table>*>*>*{
+    border-bottom: solid 3px #555;
+    padding-inline: 80px;
+    font-size: 21px;
+}
+.pages{
+    padding: 8px;
+    border: none;
+}
+.pagesazul{
+    padding: 8px;
+    border: none;
+    background-color: blue;   
+    color: white;
+}
+.body{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+table tbody>tr:nth-child(2n-1){
+    background-color: darkgray;
+}
+table {
+    border-collapse: collapse;
+}
