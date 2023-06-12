@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color:lightgrey;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    align-items: center;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:white;
+    color: green;
+}
+ul{
+    color: grey;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.header>span:nth-last-child(){
+    width: 60px;
+    height: 60px;
+    min-height: 100%;
+}
+.header>span>i{
+    margin: 0 10px  ;
+    font-size: larger;
+}
+.header>span>img{
+    margin: 5px 5px;
+    width: 40px;
+    height: 40px;
+    min-height: max-content;
+}
+.text{
+    color: rgba(255, 255, 255, 0.658);
+}
+.title{
+    font-weight:bolder ;
+    letter-spacing: 6px;
+}
+.card{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 300px;
+    background: url("https://www.comidaereceitas.com.br/wp-content/uploads/2020/08/hamburguer_bacon.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.logo {
+    width: 100px !important;
+    height: 100px !important;
+    margin-bottom: 1%;
+}
+.card>img{
+    border: solid 4px white;
+    width: 90px;
+    height: 90px;
+}
+.menu{
+    width: 100%;
+    height: 40px;
+    min-width: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: whitesmoke;
+}
+.menu>ul>li {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu>ul>li:hover {
+    transition: background-color 0.25s ease;
+    background-color: rgb(224, 224, 224);
+}
+.body{
+    background-color: white;
+    width: 66%;
+    display: flex;
+    flex-flow: column;
+}
+.cabeçalho{
+    border-top: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 30px;
+}
+.img{
+    width: 90px;
+    height: 80px;
+    border: 5px solid red;
+    border-radius: 8px;
+}
+.lanches{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 9%;
+    width: 100%;
+}
+.all {
+    display: flex;
+    gap: 24px;
+    width: 40%;
+    margin: 31px 0px;
+    border-bottom: 1px solid lightgray;
+}
+.content {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+}
+.footer{
+    background-color: white;
+    width: 66%;
+    display: flex;
+    flex-flow: column;
+}
+.body, .footer{
+    margin-top: 15px;
+    border:solid 1px rgba(0, 0, 0, 0.5);
+}
+.content>p:last-child{
+    font-weight: bolder;
+}
